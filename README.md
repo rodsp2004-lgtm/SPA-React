@@ -1,16 +1,51 @@
-# React + Vite
+# SONIX AUDIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Descripción del proyecto
 
-Currently, two official plugins are available:
+SONIX AUDIO es una aplicación web SPA desarrollada con React y Vite. Está enfocada en una empresa de producción de eventos y servicios profesionales de sonido, iluminación y equipamiento audiovisual.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías utilizadas
 
-## React Compiler
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router DOM
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Páginas del proyecto
 
-## Expanding the Oxlint configuration
+1. **Inicio:** presentación de la empresa y sus servicios.
+2. **Eventos:** categorías de eventos y trabajos realizados.
+3. **Clientes:** muestra de empresas e instituciones.
+4. **Parlantes:** catálogo de monitores y subwoofers.
+5. **Contactos:** información de contacto de la empresa.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Componentes reutilizables
+
+- **Menu:** encabezado y navegación principal.
+- **Footer:** pie de página compartido en todas las ventanas.
+- **TarjetaParlante:** componente reutilizable para mostrar los equipos de sonido.
+
+## Implementación de Props
+
+Las Props fueron implementadas en la página de Parlantes.
+
+- **Componente padre:** `parlantes.jsx`
+- **Componente hijo:** `TarjetaParlante.jsx`
+
+El componente padre envía información al componente hijo mediante las siguientes Props:
+
+- `nombre`: nombre del equipo.
+- `descripcion`: descripción del parlante.
+- `marca`: marca del equipo.
+- `imagen`: imagen correspondiente al producto.
+
+El componente hijo recibe estos datos y los utiliza para mostrar cada tarjeta de manera dinámica y reutilizable.
+
+## Navegación
+
+Se utilizó React Router DOM para permitir la navegación entre las cinco páginas de la aplicación sin recargar completamente el sitio.
+
+## Diseño responsive
+
+Se implementaron estilos CSS y media queries para adaptar la interfaz a diferentes tamaños de pantalla, como computadoras, tablets y celulares.
