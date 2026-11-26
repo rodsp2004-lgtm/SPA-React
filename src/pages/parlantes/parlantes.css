@@ -1,0 +1,153 @@
+.imagenes-parlante {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/img-parlante/parlantes.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shadow-parlante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, black 9%, transparent 120%);
+}
+
+.eslogan-parlante {
+    color: white;
+    width: 44vw;
+    height: 40vh;
+    font-size: 3.5rem;
+    overflow-wrap: break-word;
+    left: 12.5%;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+}
+.span-d-parlante {
+    color: #b69b70;
+}
+.monitores-parlante {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.monitores-parlante h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #b69b70;
+}
+.bajos-parlante {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.bajos-parlante h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #b69b70;
+}
+
+/*tarjetas*/
+
+.grid-parlantes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.tarjeta-parlante {
+    width: 100%;
+    max-width: 450px;
+    min-height: 380px;
+    margin: 0 auto;
+    background-color: #292929;
+    border: 1px solid #b69b70;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-parlante img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+}
+
+.tarjeta-parlante div {
+    padding: 20px;
+    flex: 1;
+}
+
+.tarjeta-parlante h2 {
+    color: #b69b70;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.tarjeta-parlante p {
+    color: white;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tarjeta-parlante span {
+    color: #b69b70;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.tarjeta-parlante:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(182, 155, 112, 0.2);
+}
+/* Max */
+@media (max-width: 700px) {
+    .grid-parlantes {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-parlante {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 900px) {
+    .imagenes-parlante {
+        background-size: 250% 100%;
+    }
+
+    .eslogan-parlante {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .eslogan-parlante {
+        width: 75vw;
+        left: 10%;
+        min-width: 0;
+        min-height: 0;
+        height: auto;
+        font-size: 1.7rem;
+    }
+
+    .imagenes-parlante {
+        height: 80vh;
+    }
+}

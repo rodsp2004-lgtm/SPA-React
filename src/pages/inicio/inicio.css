@@ -1,0 +1,114 @@
+.imagenes {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/img-inicio/concierto.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, black 9%, transparent 120%);
+}
+
+.eslogan {
+    color: white;
+    width: 44vw;
+    height: 40vh;
+    font-size: 3.5rem;
+    overflow-wrap: break-word;
+    left: 12.5%;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+}
+.span-D {
+    color: #b69b70;
+}
+
+/* Quienes Somos */
+
+.contenedor-p {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
+}
+
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    min-width: 360px;
+    gap: 1rem;
+}
+.articulos {
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+    width: 80vw;
+    min-width: 360px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    gap: 6em;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.imgArtic {
+    height: 40vh;
+    border-radius: 0.5rem;
+}
+
+/*Media*/
+
+/*Min*/
+@media (min-width: 900px) {
+    .quienes-somos {
+        text-align: center;
+    }
+}
+
+/*Max*/
+@media (max-width: 900px) {
+    .imagenes {
+        background-size: 250% 100%;
+    }
+    .card {
+        font-size: 1rem;
+    }
+    .quienes-somos {
+        font-size: 1rem;
+    }
+    .eslogan {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1250px) {
+    .articulos {
+        gap: 4em;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .card-reverso {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .imgArtic {
+        width: 100%;
+    }
+}

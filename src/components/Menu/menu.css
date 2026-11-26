@@ -1,0 +1,129 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    height: 7vh;
+    align-items: center;
+    background-color: black;
+}
+.titulo {
+    color: #b69b70;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+.contenedor-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+.nav-lista {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.ventana {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+}
+
+.ventana:hover {
+    transform: scale(1.1);
+    color: #b69b70;
+}
+
+/* MENU PRINCIPAL */
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 7vh;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.titulo {
+    color: #b69b70;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.contenedor-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-lista {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.ventana {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.ventana:hover {
+    color: #b69b70;
+}
+
+/* TABLETS Y PANTALLAS MEDIANAS */
+@media (max-width: 1250px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        min-height: 7vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 10px;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+
+    .contenedor-lista {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .ventana {
+        font-size: 1.1rem;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .menu {
+        gap: 12px;
+        padding: 12px 8px;
+    }
+
+    .titulo {
+        font-size: 1.7rem;
+    }
+
+    .contenedor-lista {
+        gap: 12px 18px;
+    }
+
+    .ventana {
+        font-size: 0.95rem;
+    }
+}

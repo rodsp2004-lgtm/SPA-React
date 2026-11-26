@@ -1,0 +1,31 @@
+.imagenes-contacto {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/img-contacto/contacto.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shadow-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, black 9%, transparent 120%);
+}
+
+.eslogan-contacto {
+    color: white;
+    width: 44vw;
+    height: 40vh;
+    font-size: 3.5rem;
+    overflow-wrap: break-word;
+    left: 12.5%;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+}
+.span-d-contacto {
+    color: #b69b70;
+}

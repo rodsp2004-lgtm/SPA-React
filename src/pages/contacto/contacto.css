@@ -1,0 +1,156 @@
+.imagenes-contacto {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/img-contacto/contacto.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shadow-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, black 9%, transparent 120%);
+}
+
+.eslogan-contacto {
+    color: white;
+    width: 44vw;
+    height: 40vh;
+    font-size: 3.5rem;
+    overflow-wrap: break-word;
+    left: 12.5%;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+}
+.span-d-contacto {
+    color: #b69b70;
+}
+.contacto-titulo {
+    display: flex;
+    color: #b69b70;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contacto {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.contacto-datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    width: 50%;
+    text-align: center;
+}
+.contacto-datos h2 {
+    color: #b69b70;
+    font-size: 1.8rem;
+}
+
+/*card*/
+.contacto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 6%;
+    border-radius: 0.9rem;
+    border: 0.1rem solid white;
+}
+
+@media (max-width: 1250px) {
+    .contacto-datos {
+        width: 70%;
+        gap: 3rem;
+    }
+
+    .contacto-card {
+        font-size: 1.1rem;
+        padding: 5%;
+    }
+
+    .contacto-datos h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .imagenes-contacto {
+        background-size: 250% 100%;
+    }
+
+    .eslogan-contacto {
+        font-size: 2rem;
+    }
+
+    .contacto-datos {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .contacto-card {
+        font-size: 1rem;
+    }
+
+    .contacto-datos h2 {
+        font-size: 1.2rem;
+    }
+
+    .contacto-titulo {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagenes-contacto {
+        height: 80vh;
+        background-size: 300% 100%;
+    }
+
+    .eslogan-contacto {
+        width: 75%;
+        left: 10%;
+        min-width: 0;
+        min-height: 0;
+        height: auto;
+        font-size: 1.7rem;
+    }
+
+    .contacto {
+        gap: 2rem;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    .contacto-datos {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contacto-card {
+        padding: 20px 12px;
+        font-size: 0.95rem;
+    }
+
+    .contacto-datos h2 {
+        font-size: 1.2rem;
+    }
+
+    .contacto-titulo {
+        width: 90%;
+        font-size: 0.85rem;
+    }
+}
